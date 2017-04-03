@@ -23,6 +23,7 @@
     <PackageReference Include="Cmas.Services.CallOffOrders" Version="*" />
     <PackageReference Include="Cmas.Services.Contracts" Version="*" />
     <PackageReference Include="Cmas.Services.LogWriter" Version="*" />
+    <PackageReference Include="Cmas.Services.Requests" Version="*" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.1.1" />

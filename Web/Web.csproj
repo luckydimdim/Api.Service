@@ -8,8 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.3.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.0.0" />
-    <PackageReference Include="AutoMapper" Version="6.0.1" />
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
     <PackageReference Include="Cmas.DataLayers.CouchDb.Contracts" Version="*" />
+    <PackageReference Include="Cmas.DataLayers.CouchDb.Requests" Version="*" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.1" />
