@@ -1,38 +1,30 @@
-using Cmas.Infrastructure.ErrorHandler;
 using Microsoft.Extensions.Logging;
 using Nancy;
-using ILogger = Microsoft.Extensions.Logging.ILogger;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Cmas.Services.Api
 {
     public class ApiModule : NancyModule
     {
-        private ILogger _logger;
-
-        public class Person
-        {
-            public string Id { get; set; }
-            public string Name { get; set; }
-        }
+        private ApiService _apiService;
 
         public ApiModule(ILoggerFactory loggerFactory)
         {
-            _logger = loggerFactory.CreateLogger<ApiModule>();
+            _apiService = new ApiService();
 
-            Get("/", async (parameters, obj) =>
-            {
-                return await Response.AsText("Api Module Is Alive!");
-            });
-
-            Get("token", (parameters, obj) =>
-            {
-                throw new InvalidTokenErrorException("The User had an invalid token.");
-            });
-
-            Get("unhandled", (parameters, obj) =>
-            {
-                throw new System.InvalidOperationException("An invalid operation exception.");
-            });
+            Get<Response>("/", GetWelcomeMessageHandlerAsync);
         }
+
+        #region Обработчики
+
+        private async Task<Response> GetWelcomeMessageHandlerAsync(dynamic args, CancellationToken ct)
+        {
+            var result = _apiService.GetWelcomeMessage();
+
+            return await Response.AsText(result);
+        }
+
+        #endregion
     }
 }
