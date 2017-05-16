@@ -1,0 +1,44 @@
+<config>
+
+  <!-- HTTP access control -->
+  <cors>
+    <!--indicates whether the response can be shared with resources with the given origin. -->
+    <origin>*</origin>
+    
+    <!-- specifies the method or methods allowed when accessing the resource in response to a preflight request. -->
+    <methods>POST,GET,PUT,DELETE</methods>
+    
+    <!--  is used in response to a preflight request to indicate which HTTP headers will be available via Access-Control-Expose-Headers when making the actual request -->
+    <headers>Accept, Origin, Content-type, Authorization</headers>
+  </cors>
+
+  <databases>
+ 
+    <!-- БД пользователей -->
+    <users>
+      <name>users</name>
+    </users>
+
+    <!-- БД наряд заказов -->
+    <callOffOrders>
+      <name>call-off-orders</name>
+    </callOffOrders>
+
+    <!-- БД договоров -->
+    <contracts>
+      <name>contracts</name>
+    </contracts>
+
+    <!-- БД заявок -->
+    <requests>
+      <name>requests</name>
+    </requests>
+
+    <!-- БД табелей -->
+    <timeSheets>
+      <name>time-sheets</name>
+    </timeSheets>
+
+  </databases>
+
+</config>

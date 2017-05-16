@@ -1,0 +1,19 @@
+<config>
+
+  <cmasUrl>http://localhost:63342/cmas.frontend</cmasUrl>
+
+  <databases>
+    <schema>http</schema>
+    <host>cm-ylng-msk-03:5984</host>
+    <login>cmas-backend</login>
+    <password>aTnQlRbGCIuZRkmOngRv9BYIxLCOkT2rAwm+SHLacVQ=</password>
+  </databases>
+
+  <smtp>
+    <from>youtrack@yamalspg.ru</from>
+    <host>ex01-hsn43.cloud.novatek.ru</host>
+    <port>587</port>
+    <login>MSK\youtrack</login>
+    <password>1l9o8sg+Q0fW0Bh2UfwRJtSeNhl8ho/S3AFIiqMrfkI=</password>
+  </smtp>
+</config>
