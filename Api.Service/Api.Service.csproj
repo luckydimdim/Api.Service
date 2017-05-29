@@ -24,6 +24,7 @@
     <PackageReference Include="Cmas.Services.Requests" Version="*" />
     <PackageReference Include="Cmas.Services.TimeSheets" Version="*" />
     <PackageReference Include="Cmas.Services.Auth" Version="*" />
+    <PackageReference Include="Cmas.Services.Users" Version="*" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.1.2" />

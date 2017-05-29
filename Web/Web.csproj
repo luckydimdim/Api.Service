@@ -14,12 +14,12 @@
     <PackageReference Include="Cmas.DataLayers.CouchDb.Requests" Version="*" />
     <PackageReference Include="Cmas.DataLayers.CouchDb.TimeSheets" Version="*" />
     <PackageReference Include="Cmas.DataLayers.CouchDb.Users" Version="*" />
+    <PackageReference Include="Cmas.Infrastructure.ServicesStartup" Version="*" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.2" />
     <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />
     <PackageReference Include="Nancy.Bootstrappers.Autofac" Version="2.0.0-clinteastwood" />
-    <PackageReference Include="Cmas.Infrastructure.ServicesStartup" Version="*" />
 
   </ItemGroup>
 
