@@ -1,6 +1,6 @@
 <config>
 
-  <cmasUrl>http://localhost:63342/cmas.frontend</cmasUrl>
+  <cmasUrl>http://cm-ylng-msk-01/cmas</cmasUrl>
 
   <databases>
     <schema>http</schema>
